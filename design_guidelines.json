@@ -1,0 +1,186 @@
+{
+  "identity": {
+    "name": "E1",
+    "role": "Creative Designer",
+    "mission": "Create a trust-focused, professional home services platform that blends Swiss medical cleanliness with Uber-like efficiency.",
+    "principles": [
+      "Fusion over Imitation: Mix professional trust with home warmth.",
+      "Emotion First: Every pixel must convey reliability and safety.",
+      "Content is King: Service clarity is paramount.",
+      "Zoom In: Focus on the details of the service (hands, tools, results).",
+      "Negative Space: Use white space to create a sense of cleanliness."
+    ]
+  },
+  "design_system": {
+    "theme": "light",
+    "colors": {
+      "primary": {
+        "name": "Trust Navy",
+        "hex": "#0F172A",
+        "usage": "Headings, Primary Navigation, Strong Borders"
+      },
+      "accent": {
+        "name": "Action Blue",
+        "hex": "#2563EB",
+        "usage": "Primary Buttons, Links, Active States, Icons"
+      },
+      "background": {
+        "name": "Clean Slate",
+        "hex": "#F8FAFC",
+        "usage": "Page Backgrounds, Secondary Sections"
+      },
+      "surface": {
+        "name": "Pure White",
+        "hex": "#FFFFFF",
+        "usage": "Cards, Modals, Dropdowns"
+      },
+      "text": {
+        "primary": "#0F172A",
+        "secondary": "#475569",
+        "muted": "#94A3B8"
+      },
+      "status": {
+        "success": "#10B981",
+        "warning": "#F59E0B",
+        "error": "#EF4444"
+      }
+    },
+    "typography": {
+      "headings": {
+        "family": "Manrope, sans-serif",
+        "weights": ["600", "700", "800"],
+        "tracking": "-0.02em"
+      },
+      "body": {
+        "family": "Inter, sans-serif",
+        "weights": ["400", "500"],
+        "tracking": "normal"
+      }
+    },
+    "spacing": {
+      "base": "0.25rem",
+      "container_padding": "p-6 md:p-12 lg:p-24",
+      "section_gap": "gap-12 md:gap-24"
+    },
+    "radius": {
+      "default": "rounded-lg",
+      "buttons": "rounded-full",
+      "cards": "rounded-xl"
+    },
+    "shadows": {
+      "card": "shadow-[0_2px_8px_rgba(15,23,42,0.08)]",
+      "hover": "shadow-[0_12px_24px_rgba(15,23,42,0.12)]",
+      "dropdown": "shadow-xl"
+    }
+  },
+  "layout_strategies": {
+    "marketing": {
+      "grid_style": "Bento Grid (Mode A)",
+      "hero_style": "Split Screen: Left Content, Right Image",
+      "features_style": "Asymmetrical Grid with Icons",
+      "rules": [
+        "Use generous padding (py-24) between sections.",
+        "Never center text for long paragraphs.",
+        "Use 'Manrope' for all headings to establish brand voice."
+      ]
+    },
+    "dashboard": {
+      "grid_style": "High Density Grid (Mode B)",
+      "nav_style": "Sidebar Navigation (Fixed)",
+      "card_style": "Flat White Surface with 1px Border (Slate-200)",
+      "rules": [
+        "Maximize data density but keep it readable.",
+        "Use 'Inter' for all data tables and metrics.",
+        "Status badges must be pill-shaped."
+      ]
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-white hover:bg-primary/90 rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all",
+      "secondary": "bg-white text-primary border border-slate-200 hover:bg-slate-50 rounded-full px-6 py-4 font-medium"
+    },
+    "cards": {
+      "marketing": "bg-white rounded-2xl border border-slate-100 shadow-card hover:shadow-hover transition-all duration-300 p-8",
+      "dashboard": "bg-white rounded-xl border border-slate-200 shadow-sm p-6"
+    },
+    "inputs": {
+      "default": "h-12 rounded-lg border-slate-200 focus:border-accent focus:ring-accent bg-white"
+    },
+    "navigation": {
+      "wrapper": "sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-xl",
+      "link": "text-sm font-medium text-slate-600 hover:text-primary transition-colors"
+    }
+  },
+  "assets": {
+    "hero_images": [
+      {
+        "url": "https://images.unsplash.com/photo-1597665863042-47e00964d899?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Modern clean living room",
+        "category": "hero_main"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1725042893312-5ec0dea9e369?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Bright interior with white couch",
+        "category": "hero_secondary"
+      }
+    ],
+    "service_images": [
+      {
+        "url": "https://images.unsplash.com/photo-1751486289947-4f5f5961b3aa?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Electrician fixing wires",
+        "category": "service_electrician"
+      },
+      {
+        "url": "https://images.pexels.com/photos/8488058/pexels-photo-8488058.jpeg",
+        "alt": "Plumber fixing sink",
+        "category": "service_plumber"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1755127761410-0c00c398c308?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Professional cleaner in kitchen",
+        "category": "service_cleaning"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1676250747209-eee2d728da64?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Carpenter workshop tools",
+        "category": "service_carpenter"
+      }
+    ],
+    "professional_portraits": [
+      {
+        "url": "https://images.unsplash.com/photo-1707055817568-5a20272eda6c?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Smiling service technician",
+        "category": "professional_avatar"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1679745776853-4fce2fbc150a?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Female service professional",
+        "category": "professional_avatar"
+      }
+    ],
+    "logos": [
+      {
+        "url": "https://images.unsplash.com/photo-1761044591996-7a05341a3e12?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Partner Logo 1",
+        "category": "trust_logo"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1652156752342-c786f1e1d1ce?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Partner Logo 2",
+        "category": "trust_logo"
+      }
+    ]
+  },
+  "universal_guidelines": [
+    "Do not use generic gradients. Use solid colors or subtle noise textures.",
+    "Ensure all interactive elements have a hover state.",
+    "Use 'sonner' for all toast notifications.",
+    "All interactive elements MUST include data-testid attributes.",
+    "Do not use 'Inter' for headings. Use 'Manrope'.",
+    "Use 2-3x more spacing than typical designs.",
+    "Mobile-first responsive design is mandatory.",
+    "Do not use transparent backgrounds for dropdowns or overlays."
+  ],
+  "instructions_to_main_agent": "Follow the layout strategies strictly. For the marketing site, use the 'Bento Grid' approach. For the dashboard, use the 'High Density' approach. Use the provided image URLs for their respective categories. Do not invent new colors; stick to the defined palette."
+}
